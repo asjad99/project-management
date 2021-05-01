@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" xmlns:opns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="jwgjZ0sWylh">
+  <start-date>2015-10-21T21:00:00.000Z</start-date>
+  <prototype-task>
+    <task id="t-2">
+      <title>Task 1</title>
+      <effort>28800</effort>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-3">
+      <title>Milestone 1</title>
+      <type>milestone</type>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-4">
+      <title>Group 1</title>
+      <type>group</type>
+    </task>
+  </prototype-task>
+  <prototype-resource>
+    <resource id="r-2">
+      <name>Resource 1</name>
+      <type>Staff</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-3">
+      <name>Equipment 1</name>
+      <type>Equipment</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-4">
+      <name>Material 1</name>
+      <type>Material</type>
+      <units-available>0</units-available>
+      <efficiency>0</efficiency>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-5">
+      <name>Group 1</name>
+      <type>Group</type>
+    </resource>
+  </prototype-resource>
+  <top-resource idref="r-1"/>
+  <resource id="r-1">
+    <type>Group</type>
+    <child-resource idref="r1"/>
+    <child-resource idref="r2"/>
+    <child-resource idref="r3"/>
+    <child-resource idref="r4"/>
+    <child-resource idref="r6"/>
+  </resource>
+  <resource id="r1">
+    <name>Asjad</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r2">
+    <name>Amulya</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r3">
+    <name>Adarsh</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r4">
+    <name>Roshni</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r6">
+    <name>Every one</name>
+    <type>Group</type>
+  </resource>
+  <top-task idref="t-1"/>
+  <task id="t-1">
+    <type>group</type>
+    <child-task idref="t1"/>
+    <child-task idref="t7"/>
+    <child-task idref="t9"/>
+    <child-task idref="t10"/>
+    <child-task idref="t11"/>
+    <child-task idref="t12"/>
+    <child-task idref="t13"/>
+    <child-task idref="t21"/>
+    <child-task idref="t14"/>
+    <child-task idref="t15"/>
+    <child-task idref="t16"/>
+    <child-task idref="t17"/>
+    <child-task idref="t18"/>
+  </task>
+  <task id="t1">
+    <title>Topic Selection</title>
+    <effort>144000</effort>
+    <effort-done>144000</effort-done>
+    <assignment idref="r2"/>
+    <assignment idref="r3"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t7">
+    <title>Write Intro and Background of the report 
+</title>
+    <effort>57600</effort>
+    <effort-done>57600</effort-done>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t9">
+    <title>Find and Review 10 relevant papers. 
+</title>
+    <effort>144000</effort>
+    <effort-done>144000</effort-done>
+    <assignment idref="r2"/>
+    <assignment idref="r3"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t10">
+    <title>Improve Quality of literature review table </title>
+    <effort>86400</effort>
+    <effort-done>86400</effort-done>
+    <assignment idref="r2"/>
+    <assignment idref="r3"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t11">
+    <title> Write Report Section – ‘Problems faced by remote teams’ </title>
+    <effort>115200</effort>
+    <effort-done>28800</effort-done>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t12">
+    <title>Write Report Section – ‘Media Communication Strategy’</title>
+    <effort>86400</effort>
+    <effort-done>28800</effort-done>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t13">
+    <title>Write Report Section –
+‘Risk Management of Remote teams’ 
+</title>
+    <effort>115200</effort>
+    <effort-done>28800</effort-done>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t14">
+    <title>Assemble the review table and merge sections of the report submitted by everyone 
+</title>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t15">
+    <title>Covert references submitted into Harvard Style Referencing 
+</title>
+    <effort>28800</effort>
+    <assignment idref="r2"/>
+    <assignment idref="r3"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t16">
+    <title>Write Research Motivation and Methodology Section 
+</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t17">
+    <title>Prepare Slides from the relevant Sections of report 
+</title>
+    <effort>86400</effort>
+    <assignment idref="r1"/>
+    <assignment idref="r2"/>
+    <assignment idref="r3"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t18">
+    <title>Write Abstract/Conclusion of the report 
+</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t21">
+    <title>Task 1</title>
+    <effort>28800</effort>
+  </task>
+  <critical-path root="-1" enabled="false" resources="false">
+    <color r="1" g="0.5" b="0.5"/>
+  </critical-path>
+</scenario>

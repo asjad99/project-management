@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<changelog xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
+  <version>2.1</version>
+  <task-change-set user="Muhammad Asjad" date="2015-10-29T10:18:18.876Z" timestamp="2015-10-29T10:18:18.876Z">
+    <change idref="t18" attribute="internalAssignments" type="string" from="" to="1"/>
+    <change idref="t28" attribute="internalAssignments" type="string" from="2; 3; 4" to="2; 3; 4; 1"/>
+  </task-change-set>
+  <metadata-change-set user="Muhammad Asjad" date="2015-10-22T06:01:56.000Z" timestamp="2015-10-22T06:01:56.000Z">
+    <change idref="m1" attribute="baselineInfo" type="dict" from="{
+    info =     (
+                {
+            name = &quot;Baseline 22/10/2015&quot;;
+            uuid = jwgjZ0sWylh;
+        }
+    );
+}" to="{
+    info =     (
+                {
+            name = &quot;Baseline 22/10/2015&quot;;
+            uuid = jwgjZ0sWylh;
+        },
+                {
+            name = &quot;Baseline 22/10/2015 2&quot;;
+            uuid = k6wAG1Iddld;
+        }
+    );
+}"/>
+  </metadata-change-set>
+</changelog>

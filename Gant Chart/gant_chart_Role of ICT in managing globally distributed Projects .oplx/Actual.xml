@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" xmlns:opns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="o2ykFf5BDzh">
+  <start-date>2015-08-23T22:00:00.000Z</start-date>
+  <granularity>days</granularity>
+  <prototype-task>
+    <task id="t-2">
+      <title>Task 1</title>
+      <effort>28800</effort>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-3">
+      <title>Milestone 1</title>
+      <type>milestone</type>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-4">
+      <title>Group 1</title>
+      <type>group</type>
+    </task>
+  </prototype-task>
+  <prototype-resource>
+    <resource id="r-2">
+      <name>Resource 1</name>
+      <type>Staff</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-3">
+      <name>Equipment 1</name>
+      <type>Equipment</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-4">
+      <name>Material 1</name>
+      <type>Material</type>
+      <units-available>0</units-available>
+      <efficiency>0</efficiency>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-5">
+      <name>Group 1</name>
+      <type>Group</type>
+    </resource>
+  </prototype-resource>
+  <top-resource idref="r-1"/>
+  <resource id="r-1">
+    <type>Group</type>
+    <child-resource idref="r1"/>
+    <child-resource idref="r2"/>
+    <child-resource idref="r3"/>
+    <child-resource idref="r4"/>
+    <child-resource idref="r6"/>
+  </resource>
+  <resource id="r1">
+    <name>Asjad</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r2">
+    <name>Amulya</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r3">
+    <name>Adarsh</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r4">
+    <name>Roshni</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r6">
+    <name>Every one</name>
+    <type>Group</type>
+  </resource>
+  <top-task idref="t-1"/>
+  <task id="t-1">
+    <type>group</type>
+    <child-task idref="t47"/>
+    <child-task idref="t57"/>
+    <child-task idref="t1"/>
+    <child-task idref="t53"/>
+    <child-task idref="t36"/>
+    <child-task idref="t34"/>
+    <child-task idref="t32"/>
+    <child-task idref="t18"/>
+    <child-task idref="t26"/>
+    <child-task idref="t28"/>
+  </task>
+  <task id="t1">
+    <title>Initial Literature Survey and Topic Selection(involves every reading 5-10 papers each, summarising the findings and sharing it with other team members)</title>
+    <effort>518400</effort>
+    <effort-done>518400</effort-done>
+    <start-constraint-date>2015-08-24T22:00:00.000Z</start-constraint-date>
+    <assignment idref="r2"/>
+    <assignment idref="r3"/>
+    <assignment idref="r4"/>
+    <start-no-earlier-than>2015-08-24T22:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t7">
+    <title>Write Intro and Background of the report 
+</title>
+    <effort>86400</effort>
+    <effort-done>86400</effort-done>
+    <start-constraint-date>2015-09-06T22:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2015-09-06T22:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t10">
+    <title>Improve Quality of literature review table </title>
+    <effort>432000</effort>
+    <effort-done>432000</effort-done>
+    <start-constraint-date>2015-09-13T22:00:00.000Z</start-constraint-date>
+    <assignment idref="r2"/>
+    <assignment idref="r3"/>
+    <assignment idref="r4"/>
+    <start-no-earlier-than>2015-09-13T22:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t11">
+    <title> Write Report Section – ‘Problems faced by remote teams’ </title>
+    <effort>115200</effort>
+    <effort-done>115200</effort-done>
+    <start-constraint-date>2015-09-11T22:00:00.000Z</start-constraint-date>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2015-09-11T22:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t12">
+    <title>Write Report Section – ‘Media Communication Strategy’</title>
+    <effort>374400</effort>
+    <effort-done>374400</effort-done>
+    <start-constraint-date>2015-09-11T22:00:00.000Z</start-constraint-date>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2015-09-11T22:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t13">
+    <title>Write Report Section –
+‘Risk Management of Remote teams’ 
+</title>
+    <effort>432000</effort>
+    <effort-done>432000</effort-done>
+    <start-constraint-date>2015-09-13T22:00:00.000Z</start-constraint-date>
+    <end-constraint-date>2015-10-04T13:00:00.000Z</end-constraint-date>
+    <assignment idref="r4"/>
+    <start-no-earlier-than>2015-09-13T22:00:00.000Z</start-no-earlier-than>
+    <end-no-later-than>2015-10-04T13:00:00.000Z</end-no-later-than>
+  </task>
+  <task id="t14">
+    <title>Assemble the review table and merge sections of the report submitted by everyone 
+</title>
+    <effort>57600</effort>
+    <effort-done>57600</effort-done>
+    <start-constraint-date>2015-09-24T22:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2015-09-24T22:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t15">
+    <title>Covert references submitted into Harvard Style Referencing 
+</title>
+    <effort>432000</effort>
+    <effort-done>432000</effort-done>
+    <start-constraint-date>2015-09-26T22:00:00.000Z</start-constraint-date>
+    <assignment idref="r2"/>
+    <assignment idref="r3"/>
+    <assignment idref="r4"/>
+    <start-no-earlier-than>2015-09-26T22:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t17">
+    <title>Prepare Slides - Intro/Background/Research question/Conclusion 
+</title>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t18">
+    <title>Write Abstract/Conclusion of the report 
+</title>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <start-constraint-date>2015-10-14T21:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2015-10-14T21:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t26">
+    <title>Convert the report to acis2014-submission-template format</title>
+    <effort>10800</effort>
+    <effort-done>10800</effort-done>
+    <start-constraint-date>2015-10-15T21:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2015-10-15T21:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t28">
+    <title>Finalise Formatting and Proof Read </title>
+    <effort>172800</effort>
+    <effort-done>172800</effort-done>
+    <start-constraint-date>2015-10-15T21:00:00.000Z</start-constraint-date>
+    <assignment idref="r2"/>
+    <assignment idref="r3"/>
+    <assignment idref="r4"/>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2015-10-15T21:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t29">
+    <title>Prepare Slides - Risk Management of Remote Projects</title>
+    <effort>57600</effort>
+    <effort-done>57600</effort-done>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t30">
+    <title>Prepare Slides - Media Communication Strategy for Remote Projects</title>
+    <effort>86400</effort>
+    <effort-done>86400</effort-done>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t31">
+    <title>Prepare Slides - Remote Teams - Challenges and Problems faces</title>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t32">
+    <title>Presentation Prep</title>
+    <type>group</type>
+    <start-constraint-date>2015-10-06T21:00:00.000Z</start-constraint-date>
+    <child-task idref="t17"/>
+    <child-task idref="t29"/>
+    <child-task idref="t30"/>
+    <child-task idref="t31"/>
+    <start-no-earlier-than>2015-10-06T21:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t34">
+    <title>Report Writing - Core Sections</title>
+    <type>group</type>
+    <child-task idref="t7"/>
+    <child-task idref="t39"/>
+    <child-task idref="t10"/>
+    <child-task idref="t11"/>
+    <child-task idref="t12"/>
+    <child-task idref="t13"/>
+    <child-task idref="t14"/>
+    <child-task idref="t15"/>
+    <child-task idref="t40"/>
+  </task>
+  <task id="t36">
+    <title>Search Strategy  - Finalising databases Finding keywords relevant to research question </title>
+    <effort>345600</effort>
+    <effort-done>345600</effort-done>
+    <start-constraint-date>2015-08-31T22:00:00.000Z</start-constraint-date>
+    <assignment idref="r2"/>
+    <assignment idref="r4"/>
+    <assignment idref="r3"/>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2015-08-31T22:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t39">
+    <title>Find and Critically Review 10 relevant papers to construct a literature review table
+</title>
+    <effort>432000</effort>
+    <effort-done>432000</effort-done>
+    <start-constraint-date>2015-09-06T22:00:00.000Z</start-constraint-date>
+    <assignment idref="r2"/>
+    <assignment idref="r3"/>
+    <assignment idref="r4"/>
+    <start-no-earlier-than>2015-09-06T22:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t40">
+    <title>Write Research Motivation and Methodology Section 
+</title>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <start-constraint-date>2015-09-29T22:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2015-09-29T22:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t47">
+    <title>Build a Contact list containing phone no. Skype and Emails and email to everyone</title>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <start-constraint-date>2015-08-17T22:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2015-08-17T22:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t53">
+    <title>Read Up on &apos;Project Management in Remote teams&apos; as potential topic for team</title>
+    <effort>259200</effort>
+    <effort-done>259200</effort-done>
+    <start-constraint-date>2015-08-25T22:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <assignment idref="r2"/>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2015-08-25T22:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t55">
+    <title>Create a one drive Folder</title>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <start-constraint-date>2015-08-24T22:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2015-08-24T22:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t56">
+    <title>Make a list of Online Databases and Journals that have publications specific to IT and PM</title>
+    <effort>57600</effort>
+    <effort-done>57600</effort-done>
+    <start-constraint-date>2015-08-25T22:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2015-08-25T22:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t57">
+    <title>Setup of Project Resources</title>
+    <type>group</type>
+    <start-constraint-date>2015-08-25T22:00:00.000Z</start-constraint-date>
+    <child-task idref="t67"/>
+    <child-task idref="t55"/>
+    <child-task idref="t56"/>
+    <start-no-earlier-than>2015-08-25T22:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t67">
+    <title>Team Should develop a thorough understanding of the topic and Gaps that exist in current literature </title>
+    <type>milestone</type>
+    <completion-percentage>1</completion-percentage>
+    <start-constraint-date>2015-09-02T22:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <assignment idref="r2"/>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2015-09-02T22:00:00.000Z</start-no-earlier-than>
+  </task>
+  <critical-path root="-1" enabled="false" resources="false">
+    <color r="1" g="0.5" b="0.5"/>
+  </critical-path>
+</scenario>
